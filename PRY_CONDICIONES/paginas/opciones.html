@@ -1,0 +1,47 @@
+<div class="grid-prop">
+<article class="contenido1">
+  <h2>Preferencias</h2>
+  <p>Selecciona tus intereses. Si se activa “Noticias”, se muestra un aviso.</p>
+  <label><input type="checkbox" class="form-check-input" onclick="opcionNoticias.onclick()" onchange="opcionNoticias.onchange()" id="opcionNoticias" /> Noticias</label><br>
+  <label><input type="checkbox" class="form-check-input"  onclick="opcionMusica.onclick()" onchange="opcionMusica.onchange()" id="opcionMusica" /> Música</label><br>
+  <div class="respuesta" id="respuestaCheckbox"></div>
+</article>
+
+<article class="contenido1">
+  <h2>Género</h2>
+  <p>Selecciona tu género. Se mostrará un ícono según la selección.</p>
+  <label><input type="radio" name="genero" value="H" id="generoH" onclick="generoH.onclick()" onchange="generoH.onchange()" /> Hombre</label><br>
+  <label><input type="radio" name="genero" value="M" id="generoM" onclick="generoM.onclick()" onchange="generoM.onchange()" /> Mujer</label><br>
+  <div class="respuesta" id="respuestaRadio"></div>
+</article>
+
+<article class="contenido1">
+  <h2>Selecciona tu país</h2>
+  <p>Se mostrará una bandera cuando selecciones un país.</p>
+  <select class="form-select"id="selectPais"
+    onchange="selectPais.onchange()" 
+    onclick="selectPais.onclick()" 
+    onfocus="selectPais.onfocus()" 
+    onblur="selectPais.onblur()">
+    <option value="">-- Selecciona --</option>
+    <option value="ec">Ecuador</option>
+    <option value="us">Estados Unidos</option>
+    <option value="jp">Japón</option>
+  </select>
+  <div style="
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f2f2f200;
+  margin-top: 10px;
+  width: 50%;
+  height: 100px;
+  padding-left: 100px;
+  padding-top: 25px;
+  ">
+  <div class="respuesta" id="respuestaSelect"></div>
+  </div>
+</article>
+"></div>
+</article>
+</div>

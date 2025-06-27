@@ -1,0 +1,67 @@
+/* Animación de "verificando..." */
+.anim-verificando {
+  animation: verificarAnimacion 1.2s ease-in-out infinite alternate;
+  color: orange;
+}
+
+@keyframes verificarAnimacion {
+  from {
+    opacity: 0.4;
+    transform: scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Animación de parpadeo en contenedor de formulario */
+.parpadeo-error {
+  animation: parpadear 0.3s ease-in-out 3;
+}
+
+@keyframes parpadear {
+  0%, 100% { background-color: transparent; }
+  50% { background-color: rgba(255, 0, 0, 0.2); }
+}
+
+/* Barra de borrando... */
+.barra-borrando {
+  width: 0%;
+  height: 6px;
+  background-color: red;
+  animation: borrarAnim 1.5s forwards;
+  margin-top: 6px;
+  border-radius: 5px;
+}
+
+@keyframes borrarAnim {
+  to {
+    width: 100%;
+  }
+}
+
+/* Tooltip visual */
+.borrar-tooltip:hover::after {
+  content: "⚠ Borrar todo";
+  position: absolute;
+  background: #333;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  top: -40px;
+  left: 0;
+  white-space: nowrap;
+  font-size: 0.8em;
+  z-index: 10;
+}
+
+.parpadeo-rojo {
+  animation: resaltarRojo 0.6s ease-in-out;
+}
+
+@keyframes resaltarRojo {
+  0% { background-color: #ffd6d6; }
+  50% { background-color: #f78484; }
+  100% { background-color: transparent; }
+}

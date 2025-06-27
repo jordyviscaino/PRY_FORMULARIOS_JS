@@ -1,0 +1,75 @@
+<div class="grid-prop container-fluid ">
+ <article class="contenido1" style="
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  width: 80%;
+  max-width: 400px;
+  margin: 0 auto;
+">
+ 
+<form id="formularioFinal"
+  onsubmit="return enviarFormulario()" 
+  onreset="reiniciarFormulario()" 
+  oninput="escribiendoFormulario()" 
+  onchange="cambioFormulario()">
+
+
+<div class="contenido1" id="bloqueFormulario" style="padding: 10%; padding-bottom: 20px;">
+  <h2>Formulario de Contacto</h2>
+  <label style="font-weight: bold;">Nombre: <input type="text" class="form-control" id="nombreForm"></label><br>
+  <label style="font-weight: bold;">Email: <input type="email" class="form-control" id="emailForm"></label><br>
+  <div class="respuesta"  style="font-weight: bold;" id="respuestaForm"></div>
+</div>
+
+
+
+<div class="contenido1" style="
+    padding-bottom: 20px;
+    padding: 10%;
+    
+    ">
+    <h2>Botón personalizado</h2>
+   <button type="button"
+  id="botonPersonalizado"
+  onclick="verificarUsuario()"
+  onmouseover="resaltarBoton()"
+  onmousedown="presionarBoton()"
+  onmouseup="soltarBoton()"
+  onfocus="enfocarBoton()">Verificar Usuario</button>
+
+    <div class="respuesta" id="respuestaBoton"
+    style="font-weight: bold;"></div>
+</div>
+
+<div class="contenido1" style="
+    padding-bottom: 20px;
+    padding: 10%;
+    
+    ">
+    <h2>Botón de Enviar</h2>
+    <input type="submit"
+      value="Enviar Formulario"
+      id="botonSubmit"
+      onclick="botonSubmit.onclick()"
+      onmouseover="botonSubmit.onmouseover()">
+</div>
+
+<div class="contenido1" style="
+    padding-bottom: 20px;
+    padding: 10%;
+    
+    ">
+    <h2>Reiniciar</h2>
+    <input type="reset" value="Reiniciar Formulario" class="borrar-tooltip">
+
+
+    </div>
+ 
+</form>
+ </article>
+</div>
